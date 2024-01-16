@@ -10,6 +10,8 @@ int main(void)
 	int i = 0;
 	int num[10];
 	int check;
+	int count_odd = 0;
+	int count_even = 0;
 
 	while (i < 10)
 {
@@ -36,12 +38,15 @@ int main(void)
 		if (num[i] % 2 == 0)
 {
 			printf("%d   is even\n", num[i]);
+			count_even++;
 }
 		else
 {
 			printf("%d   is odd\n", num[i]);
+			count_odd++;
 }
 }
+	printf("There were %d even numbers and %d odd numbers\n", count_even, count_odd);
 	return (0);
 }
 
