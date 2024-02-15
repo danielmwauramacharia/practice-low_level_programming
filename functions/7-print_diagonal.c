@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- *print_diagonal -prints a diagonal line using \
- *@n: the size of the line
- */
+  *print_diagonal - prints a diagonal line
+  *@n: the size of the line
+  */
 void print_diagonal(int n)
 {
 	int i = 0, j;
-	
+
 	if (!(n == 0 || n < 0))
 		while (i < n)
 {
@@ -16,7 +16,7 @@ void print_diagonal(int n)
 				_putchar('\\');
 				_putchar('\n');
 }
-			else 
+			else
 {
 				j = 0;
 				while (j < i)
