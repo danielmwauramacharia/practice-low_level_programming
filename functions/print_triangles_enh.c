@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-  *print_triangle_row -prints the rows of a triangle
+  *print_triangle_row -prints a row of a triangle
   *@spaces: spaces before the triagle
-  *@hashes: number of # in the triagle
+  *@hashes: number of # characters in the triangle
   */
 
 void print_triangle_row(int spaces, int hashes)
@@ -20,7 +20,7 @@ void print_triangle_row(int spaces, int hashes)
 }
 
 /**
-  *print_triangle - prints triangle of given size
+  *print_triangle - prints triangle of given size using #
   *@size: The size of the triangle
   */
 
