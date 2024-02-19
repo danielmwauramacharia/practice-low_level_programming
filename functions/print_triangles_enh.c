@@ -5,14 +5,17 @@
   *@spaces: spaces before the triagle
   *@hashes: number of # in the triagle
   */
+
 void print_triangle_row(int spaces, int hashes)
 {
 	int i, j;
 
 	for (i = 0; i < spaces; i++)
 		_putchar(' ');
+
 	for (j = 0; j < hashes; j++)
 		_putchar('#');
+
 	_putchar('\n');
 }
 
@@ -20,6 +23,7 @@ void print_triangle_row(int spaces, int hashes)
   *print_triangle - prints triangle of given size
   *@size: The size of the triangle
   */
+
 void print_triangle(int size)
 {
 	int row, spaces, hashes;
@@ -29,6 +33,7 @@ void print_triangle(int size)
 		_putchar('\n');
 		return;
 }
+
 	for (row = 0; row < size; row++)
 {
 		spaces = size - row - 1;
