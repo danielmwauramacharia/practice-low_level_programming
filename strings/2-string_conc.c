@@ -21,14 +21,12 @@ int main(void)
 		i++;
 }
 	len1 = count1;
-	printf("%d\n", len1);
 	while (lname[k] != '\0')
 {
 		count2++;
 		k++;
 }
 	len2 = count2;
-	printf("%d\n", len2);
 	for (j = 0; j <= len2; j++)
 {
 		fname[len1 + j] = lname[j];
