@@ -7,8 +7,8 @@
   */
 int main(void)
 {
-	char name[30], ch;
-	int i = 0, j, count = 0, len = 0;
+	char name[30], rev[30];
+	int i = 0, j = 0, k = 0, count = 0, len = 0;
 
 	printf("Enter a name: \n");
 	scanf("%s", name);
@@ -18,12 +18,18 @@ int main(void)
 		i++;
 }
 	len = count;
-	for (j = 0; j <= len / 2; j++)
+	while (len >= 1)
 {
-		ch = name[j];
-		name[j] = name[len - j - 1];
-		name[len - j - 1] = ch;
+		rev[j] = name[len - 1];
+		j++;
+		len--;
 }
-	printf("The reverse is : %s\n", name);
+	printf("The name in reverse is :");
+	while (rev[k] != '\0')
+{
+		printf("%c", rev[k]);
+		k++;
+}
+	printf("\n");
 	return (0);
 }
