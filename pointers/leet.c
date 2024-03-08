@@ -7,12 +7,12 @@
   */
 char *leet(char *s)
 {
-	int i = 0, k = 0, j;
+	int k = 0, j;
 	char *ptr = s;
 	char a[] = "aeotl";
 	char b[] = "43071";
 
-	while (i < 5)
+	while (a[k] != '\0')
 {
 		j = 0;
 		while (ptr[j] != '\0')
@@ -22,7 +22,6 @@ char *leet(char *s)
 			j++;
 }
 		k++;
-		i++;
 }
 	return (s);
 }
